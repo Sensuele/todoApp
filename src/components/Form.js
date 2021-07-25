@@ -7,7 +7,7 @@ const Form = ({setInputText, todos, setTodos, inputText}) => {
 
   const submitTodoHandler = e => {
     e.preventDefault();
-    setTodos([...todos, {text: inputText, completed: false, id: Math.random}]);
+    setTodos([...todos, {text: inputText, completed: false, id: Math.random() }]);
     setInputText("");
   }
   return (
